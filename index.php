@@ -1,8 +1,6 @@
 <?php
-
   require_once('stats.php');
   require_once('TestimonialTweets.php');
-
   $plans = array(
     array(
       'plan' => 'Mining',
@@ -23,9 +21,7 @@
       'descr' => 'El Salvador became the first country to start treating Bitcoin as legal tender. It means that within the country people can use it to buy and sell things legally, including but not limited to paying taxes and employees with it.',
     ),
   );
-
   $c = 0;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,70 +39,68 @@
   <![endif]-->
 </head>
 <body>
-
   <div class="antialiased tracking-wide leading-relaxed min-h-screen">
-
     <section id="main" class="lg:h-screen py-2 bg-gradient-to-br from-indigo-900 to-gray-900 shadow-2xl relative _border-b-4 border-yellow-700 z-40">
       <div class="mx-auto lg:px-24">
       <nav class="py-2 lg:px-28 md:px-5 flex flex-col md:flex-row items-center lg:mt-4 space-y-3 md:space-y-0 justify-between lg:mr-4 text-white">
-        <div class="flex justify-center items-center space-x-1">
-          <a href="./"> 
-              <div class="flex justify-center items-center space-x-2">
-                  <img src="./assets/imgs/mano.png" class="h-auto w-14 mr-1" alt="">
-                  <span class="flex relative flex-col">
-                      <h2 class="text-2xl text-gray-300 font-semibold tracking-widest _uppercase">Project Mano</h2>
-                      <span class="flex justify-center items-center space-x-1 text-gray-500 absolute top-7 text-sm right-0">
-                      <div class="flex flex-col space-y-1">
-                          <span class="inline-flex h-1 w-1 rounded-full bg-yellow-400 opacity-75"></span>
-                          <span class="inline-flex h-1 w-1 rounded-full bg-yellow-400 opacity-75"></span>
-                      </div>
-                      <span class="text-lg">
-                          Initiative
-                      </span>
-                      </span>
-                  </span>
-              </div>
-          </a>
-        </div>
-        <div class="flex flex-row items-center justify-center my-auto space-x-2 md:space-x-4 px-2 md:px-0 index999">
-          <a data-scroll href="./#intro" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
-            Intro
-          </a>
-          <a data-scroll href="./#whyEth" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
-            Why Ethiopia
-          </a>
-          <a data-scroll href="./#plan" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
-            Plan
-          </a>
-          <a data-scroll href="./#test" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
-            Testimonials
-          </a>
-
-          <div class="flex items-center justify-center">
-
-            <label for="themeSwitch" class="flex items-center cursor-pointer lg:ml-4">
-              <div class="relative">
-                <input type="checkbox" id="themeSwitch" class="sr-only bg-green-700 shadow-inner">
-                <div class="block bg-transparent border border-gray-400 shadow-lg w-12 h-6 rounded-full flex justify-between">
-
-                  <svg class="w-3 absolute left-2 top-1.5 h-3 fill-current text-yellow-300" viewBox="0 0 512 512" class="sun-svg">
-                    <path id="sun-svg" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
-                    </path>
-                  </svg>
-                  <svg class="w-3 absolute right-2_ top-1.5 h-3 fill-current text-yellow-700" style="right: 0.57rem;" viewBox="0 0 512 512" class="moon-svg">
-                    <path id="moon-svg" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
-                    </path>
-                  </svg>
-
+          <div class="flex justify-center items-center space-x-1">
+            <a href="./"> 
+                <div class="flex justify-center items-center space-x-2">
+                    <img src="./assets/imgs/mano.png" class="h-auto w-14 mr-1" alt="">
+                    <span class="flex relative flex-col">
+                        <h2 class="text-2xl text-gray-300 font-semibold tracking-widest _uppercase">Project Mano</h2>
+                        <span class="flex justify-center items-center space-x-1 text-gray-500 absolute top-7 text-sm right-0">
+                        <div class="flex flex-col space-y-1">
+                            <span class="inline-flex h-1 w-1 rounded-full bg-yellow-400 opacity-75"></span>
+                            <span class="inline-flex h-1 w-1 rounded-full bg-yellow-400 opacity-75"></span>
+                        </div>
+                        <span class="text-lg">
+                            Initiative
+                        </span>
+                        </span>
+                    </span>
                 </div>
-                <div class="dot absolute left-2 top-1 bg-green-700 shadow-inner w-4 h-4 rounded-full transition"></div>
-              </div>
-            </label>
+            </a>
+          </div>
+          <div class="flex flex-row items-center justify-center my-auto space-x-2 md:space-x-4 px-2 md:px-0 index999">
+            <a data-scroll href="./#intro" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
+              Intro
+            </a>
+            <a data-scroll href="./#whyEth" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
+              Why Ethiopia
+            </a>
+            <a data-scroll href="./#plan" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
+              Plan
+            </a>
+            <a data-scroll href="./#test" class="px-2 text-gray-200 font-bolder tracking-wider lg:text-lg border-b border-indigo-900 border-opacity-0 py-2 hover:border-yellow-800 transition duration-500">
+              Testimonials
+            </a>
+
+            <div class="flex items-center justify-center">
+
+              <label for="themeSwitch" class="flex items-center cursor-pointer lg:ml-4">
+                <div class="relative">
+                  <input type="checkbox" id="themeSwitch" class="sr-only bg-green-700 shadow-inner">
+                  <div class="block bg-transparent border border-gray-400 shadow-lg w-12 h-6 rounded-full flex justify-between">
+
+                    <svg class="w-3 absolute left-2 top-1.5 h-3 fill-current text-yellow-300" viewBox="0 0 512 512" class="sun-svg">
+                      <path id="sun-svg" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+                      </path>
+                    </svg>
+                    <svg class="w-3 absolute right-2_ top-1.5 h-3 fill-current text-yellow-700" style="right: 0.57rem;" viewBox="0 0 512 512" class="moon-svg">
+                      <path id="moon-svg" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+                      </path>
+                    </svg>
+
+                  </div>
+                  <div class="dot absolute left-2 top-1 bg-green-700 shadow-inner w-4 h-4 rounded-full transition"></div>
+                </div>
+              </label>
+
+            </div>
 
           </div>
-
-        </div>
-      </nav>
+        </nav>
 
         <div class="text-center py-1 lg:py-2 space-y-1 lg:mt-40">
           <div class="lg:py-3 leading-8 font-extrabold text-green-600 text-xl lg:text-4xl">
@@ -277,9 +271,6 @@
 
         </div>
 
-
-
-
       </div>
 
     </section>
@@ -406,7 +397,6 @@
           </div>
         </div>
 
-        <!-- next/prev btns. -->
         <div class="flex justify-end px-7 transform -translate-y-6 lg:-translate-y-3">
           <div class="flex mt-10 space-x-2 hidden">
             <?php for ($i = 0; $i <= 4; $i++) {

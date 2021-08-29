@@ -13,15 +13,11 @@ $('input#themeSwitch').on('change', function(e) {
 
     localStorage.setItem('theme', toggleTo);
     } else {
-    localStorage.theme = false;
+        // default is light.
+        localStorage.setItem('theme', 'dark');
+        $('div[data-theme]').addClass('dark');
     }
 });
-
-function hideMsg() {
-    setInterval(() => {
-    $('#subMsg').addClass('hidden');
-    }, 2500);
-}
 
 AOS.init({
     // disable: 'mobile',
@@ -30,12 +26,11 @@ AOS.init({
 
 $(document).ready(function() {
 
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    $('div[data-theme]').addClass('dark');
-    $('input#themeSwitch').attr('checked', 'true');
-
+    if (localStorage.theme === 'dark') {
+        $('div[data-theme]').addClass('dark');
+        $('input#themeSwitch').attr('checked', 'true');
     } else {
-    $('div[data-theme]').removeClass('dark');
+        $('div[data-theme]').removeClass('dark');
     }
 
 });

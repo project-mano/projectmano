@@ -13,11 +13,9 @@
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 <body>
-
   <div class="antialiased tracking-wide leading-relaxed min-h-screen">
-
     <section id="A" class="lg:h_-screen pt-2 bg-gradient-to-br from-indigo-900 to-gray-900 shadow-2xl relative">
-    
+
         <nav class="py-2 lg:px-28 md:px-5 flex flex-col md:flex-row items-center lg:mt-4 space-y-3 md:space-y-0 justify-between lg:mr-4 text-white">
           <div class="flex justify-center items-center space-x-1">
             <a href="./"> 
@@ -114,8 +112,6 @@
                   <h2 class="text-xl lg:text-2xl ml-3 lg:ml-0 text-gray-900 font-semibold tracking-widest _uppercase">Plan A: Mining</h2>
                 
                 </div>
-                <img src="./assets/svgs/bitcoinMining.svg" class="block lg:hidden max-w-sm" alt="Bitcoin Mining">
-
 
                 <div class="flex flex-col space-y-2 mt-2 lg:mt-3 text-lg px-2 lg:px-0">
                     <p>
@@ -130,7 +126,7 @@
             <p class="lg:px-28 text-lg leading-8 px-6">
                 Hypothetically, if part of GERD is repurposed to mine Bitcoin, it could potentially produce billions of dollars a year.
             </p>
-            <img src="./assets/svgs/bitcoinMining.svg" class="hidden lg:block absolute max-w-full right-4 lg:right-20 2xl:-bottom-3 -top-20 z-40" alt="Bitcoin Mining">
+            <img src="./assets/svgs/bitcoinMining.svg" class="hidden lg:block absolute max-w-full right-4 lg:right-20 -top-20 z-40" alt="">
 
             <div class="custom-shape-divider-bottom-1629395594 mt-4 opacity-70">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -323,7 +319,6 @@
       </div>
     </section>
 
-
     <section id="B">
       <div data-theme class="px-4 lg:px-24 bg-gradient-to-bl from-indigo-900 to-gray-800 text-white py-12 lg:py-14">
 
@@ -375,7 +370,6 @@
 
       </div>  
     </section>
-
 
     <section class="light">
 
