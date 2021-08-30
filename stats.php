@@ -6,7 +6,7 @@ $dotenv->load();
 $client = new GuzzleHttp\Client();
 
 // BTC
-$btcRes = $client->request('GET', 'https://www.cryptotradingapi.io/api/price/BTC/USD/BINANCE', [
+$btcRes = $client->request('GET', 'https://www.cryptotradingapi.io/api/price/BTC/USD/COINBASE', [
             'headers' => [
                 'x-access-token' => $_ENV['cryptotradingapiaccess'],
                 'Content-Type' => 'application/json',

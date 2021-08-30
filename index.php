@@ -392,7 +392,7 @@
         <div style="min-height:85vh;" class="flex flex-col justify-between bg-gradient-to-b from-yellow-800 via-gray-300_ to-transparent text-black text-lg _shadow-lg px-6 py-6 mt-14 rounded-t-xl _border-2 border-yellow-600">
 
           <h1 class="text-3xl lg:px-4 lg:py-6 text-white filter drop-shadow-lg">Testimonials</h1>
-          <div data-theme class="relative_ w-11/12 md:w-3/4 shadow-r-lg overflow-x-auto absolute -right-6 lg:right-0 top-1/4 flex justify-between space-x-4 md:space-x-8 items-center pr-8 lg:pr-4" id="tweets">
+          <div data-theme class="relative_ w-11/12 md:w-3/4 shadow-r-lg overflow-x-auto absolute sm:-right-6 lg:right-0 top-1/4 flex justify-between space-x-4 md:space-x-8 items-center pr-8 lg:pr-4" id="tweets">
             <?php echo $tweetsList; ?>
           </div>
         </div>
