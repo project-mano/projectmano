@@ -6,7 +6,7 @@ $dotenv->load();
 $client = new CoinGeckoClient();
 
 $data = $client->ping();
-$data = $client->simple()->getPrice('0x,bitcoin', 'usd,rub');
+$data = $client->simple()->getPrice('0x,bitcoin', 'usd');
 
 $client = new GuzzleHttp\Client();
 
