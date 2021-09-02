@@ -1,6 +1,7 @@
 {
     "require": {
         "vlucas/phpdotenv": "^5.3",
-        "guzzlehttp/guzzle": "^7.3"
+        "guzzlehttp/guzzle": "^7.3",
+        "codenix-sv/coingecko-api": "^1.0"
     }
 }

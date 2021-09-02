@@ -419,10 +419,10 @@
 
             <div class="relative flex flex-col">
               
-              <div class="absolute -left-1 top-2 lg:-left-7 lg:top-2">
-                <span class="flex h-2 w-2 lg:h-3  lg:w-3">
+              <div class="absolute -left-1 top-2 lg:-left-8 lg:top-2">
+                <span class="flex h-2 w-2 lg:h-4  lg:w-4">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 lg:h-3 lg:w-3 bg-yellow-500"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 lg:h-4 lg:w-4 bg-yellow-500"></span>
                 </span>
               </div>
               <h2 class="text-xl lg:text-2xl ml-3 lg:ml-0 text-gray-300 font-semibold tracking-widest _uppercase">Plan C: Linking it to ETB or Other Legal Tenders</h2>
